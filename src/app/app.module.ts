@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
+import { ContainerComponent } from './container/container.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { RightComponent } from './right/right.component';
     HomeComponent,
     NavComponent,
     LeftComponent,
-    RightComponent
+    RightComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
