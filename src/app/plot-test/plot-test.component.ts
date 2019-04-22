@@ -23,7 +23,7 @@ export class PlotTestComponent implements OnInit {
           y: this.dat2,
           type: 'scatter',
           mode: 'markers',
-          marker: {color: 'black'},
+          marker: {color: 'teal'},
           layout: {hovermode: 'closest'}
         },
     ],
