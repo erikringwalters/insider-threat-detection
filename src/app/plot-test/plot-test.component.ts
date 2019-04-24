@@ -27,7 +27,7 @@ export class PlotTestComponent implements OnInit {
           layout: {hovermode: 'closest'}
         },
     ],
-    layout: {width: 1000, height: 500, title: 'from media by to media std dev'}
+    layout: {width: 800, height: 500, title: 'from media by to media std dev'}
 };
 
 
