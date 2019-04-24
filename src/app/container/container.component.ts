@@ -9,6 +9,8 @@ import { Title } from '@angular/platform-browser';
 export class ContainerComponent implements OnInit {
 
   @Input() title: String;
+  @Input() for: String;
+  @Input() id: String;
 
   constructor() { }
 
