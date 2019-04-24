@@ -5,8 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 //Import all components to be routed to
 import { HomeComponent } from './home/home.component';
-import { LeftComponent } from './left/left.component';
-import { RightComponent } from './right/right.component';
 
 const routes: Routes = [
   //no specified path goes to home
@@ -18,15 +16,6 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
-  },
-  //TODO: route left and right
-  {
-    path: 'left',
-    component: LeftComponent
-  },
-  {
-    path: 'right',
-    component: RightComponent
   },
   //Catch all for undefined routes
   {
