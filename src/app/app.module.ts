@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -9,6 +11,7 @@ import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
 import { ContainerComponent } from './container/container.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    InViewportModule,
+    ScrollSpyModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
