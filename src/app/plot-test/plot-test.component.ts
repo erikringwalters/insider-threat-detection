@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+
+import user_true from '../../data/stripped_media/user_true.json';
+import user_false from '../../data/stripped_media/user_false.json';
 import to_media_true from '../../data/stripped_media/to_rem_true.json';
 import to_media_false from '../../data/stripped_media/to_rem_false.json';
-
-import from_media from '../../data/from_media.json';
+import from_media_true from '../../data/stripped_media/from_rem_true.json';
+import from_media_false from '../../data/stripped_media/from_rem_false.json';
 
 @Component({
   selector: 'app-plot-test',
@@ -11,10 +14,12 @@ import from_media from '../../data/from_media.json';
 })
 export class PlotTestComponent implements OnInit {
 
+  userTrue: String[] = user_true;
+  userFalse: String[] = user_false;
   toMediaTrue: number[] = to_media_true;
-
   toMediaFalse: number[] = to_media_false;
-  dat2: number[] = from_media;
+  fromMediaTrue: number[] = from_media_true;
+  fromMediaFalse: number[] = from_media_false;
 
   constructor() { }
 
@@ -23,22 +28,46 @@ export class PlotTestComponent implements OnInit {
 
   public graph = {
     data: [
-        { x: this.dat,
-          y: this.dat2,
+        { x: this.toMediaFalse,
+          y: this.fromMediaFalse,
+          text: this.userFalse,
           type: 'scatter',
           mode: 'markers',
-          marker: {color: 'teal'},
-          layout: {hovermode: 'closest'}
+          marker: {color: 'lightblue'},
+          name: 'Not a threat',
         },
-        { x: this.dat2,
-          y: this.dat,
+        { x: this.toMediaTrue,
+          y: this.fromMediaTrue,
+          text: this.userTrue,
           type: 'scatter',
           mode: 'markers',
-          marker: {color: 'darkred'},
-          layout: {hovermode: 'closest'}
+          marker: {color: 'red'},
+          name: 'Insider threat',
         },
     ],
-    layout: {width: 800, height: 800, title: 'from media by to media std dev'}
+    layout: {
+      // --dimensions
+      width: 800,
+      height: 500,
+
+      // --titles and labels
+      title: 'Standard Deviations of Removable Media',
+      xaxis: { title: 'deviations from removable media' },
+      yaxis: { title: 'deviations to removable media' },
+
+      // --marker--
+      marker: {
+        size: 10,
+        line: { width: 2 }
+      },
+
+      // --misc params
+      hovermode: 'closest',
+
+      // --colors--
+      // paper_bgcolor: 'rgba(0,0,0,0)', //Transparent
+      // plot_bgcolor: 'rgba(0,0,0,0)'
+    }
 };
 
 
