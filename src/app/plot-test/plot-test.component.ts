@@ -28,19 +28,25 @@ export class PlotTestComponent implements OnInit {
 
   public graph = {
     data: [
-        { x: this.toMediaFalse,
+        {
+          name: 'Not a threat',
+          x: this.toMediaFalse,
           y: this.fromMediaFalse,
           text: this.userFalse,
           type: 'scatter',
           mode: 'markers',
-          name: 'Not a threat',
           marker: {
             color: 'lightblue',
             size: 10,
-            line: { width: 2 }
+            line: {
+              width: 2,
+              color: 'darkgray'
+            }
           },
         },
-        { x: this.toMediaTrue,
+        {
+          name: 'Insider threat',
+          x: this.toMediaTrue,
           y: this.fromMediaTrue,
           text: this.userTrue,
           type: 'scatter',
@@ -48,9 +54,11 @@ export class PlotTestComponent implements OnInit {
           marker: {
             color: 'red',
             size: 10,
-            line: { width: 2 }
+            line: {
+              width: 2,
+              color: 'black'
+            }
           },
-          name: 'Insider threat',
         },
     ],
     layout: {
@@ -62,8 +70,6 @@ export class PlotTestComponent implements OnInit {
       title: 'Standard Deviations of Removable Media',
       xaxis: { title: 'deviations from removable media' },
       yaxis: { title: 'deviations to removable media' },
-
-
 
       // --misc params
       hovermode: 'closest',
