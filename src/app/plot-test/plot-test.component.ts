@@ -33,15 +33,23 @@ export class PlotTestComponent implements OnInit {
           text: this.userFalse,
           type: 'scatter',
           mode: 'markers',
-          marker: {color: 'lightblue'},
           name: 'Not a threat',
+          marker: {
+            color: 'lightblue',
+            size: 10,
+            line: { width: 2 }
+          },
         },
         { x: this.toMediaTrue,
           y: this.fromMediaTrue,
           text: this.userTrue,
           type: 'scatter',
           mode: 'markers',
-          marker: {color: 'red'},
+          marker: {
+            color: 'red',
+            size: 10,
+            line: { width: 2 }
+          },
           name: 'Insider threat',
         },
     ],
@@ -55,11 +63,7 @@ export class PlotTestComponent implements OnInit {
       xaxis: { title: 'deviations from removable media' },
       yaxis: { title: 'deviations to removable media' },
 
-      // --marker--
-      marker: {
-        size: 10,
-        line: { width: 2 }
-      },
+
 
       // --misc params
       hovermode: 'closest',
