@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import to_media from '../../data/to_media.json';
+import to_media_true from '../../data/stripped_media/to_rem_true.json';
+import to_media_false from '../../data/stripped_media/to_rem_false.json';
+
 import from_media from '../../data/from_media.json';
 
 @Component({
@@ -9,7 +11,9 @@ import from_media from '../../data/from_media.json';
 })
 export class PlotTestComponent implements OnInit {
 
-  dat: number[] = to_media;
+  toMediaTrue: number[] = to_media_true;
+
+  toMediaFalse: number[] = to_media_false;
   dat2: number[] = from_media;
 
   constructor() { }
@@ -26,8 +30,15 @@ export class PlotTestComponent implements OnInit {
           marker: {color: 'teal'},
           layout: {hovermode: 'closest'}
         },
+        { x: this.dat2,
+          y: this.dat,
+          type: 'scatter',
+          mode: 'markers',
+          marker: {color: 'darkred'},
+          layout: {hovermode: 'closest'}
+        },
     ],
-    layout: {width: 800, height: 500, title: 'from media by to media std dev'}
+    layout: {width: 800, height: 800, title: 'from media by to media std dev'}
 };
 
 
