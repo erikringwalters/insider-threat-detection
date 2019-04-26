@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 //Import all components to be routed to
 import { HomeComponent } from './home/home.component';
+import { PlotTestComponent } from'./plot-test/plot-test.component';
 
 const routes: Routes = [
   //no specified path goes to home
