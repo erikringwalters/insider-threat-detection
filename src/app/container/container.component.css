@@ -1,0 +1,7 @@
+.spy-offset:before {
+  display: block;
+  content: " ";
+  /* Change margin-top to alter offset of scrollspy sensor */
+  margin-top: 5px;
+  visibility: hidden;
+}
