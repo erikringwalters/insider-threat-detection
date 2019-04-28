@@ -5,3 +5,9 @@
   margin-top: 5px;
   visibility: hidden;
 }
+
+.card-title{
+  text-align: center;
+  font-size: 24pt;
+  margin: 20px;
+}

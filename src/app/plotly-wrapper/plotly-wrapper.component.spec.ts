@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RightComponent } from './right.component';
+import { PlotlyWrapperComponent } from './plotly-wrapper.component';
 
-describe('RightComponent', () => {
-  let component: RightComponent;
-  let fixture: ComponentFixture<RightComponent>;
+describe('PlotlyWrapperComponent', () => {
+  let component: PlotlyWrapperComponent;
+  let fixture: ComponentFixture<PlotlyWrapperComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RightComponent ]
+      declarations: [ PlotlyWrapperComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RightComponent);
+    fixture = TestBed.createComponent(PlotlyWrapperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

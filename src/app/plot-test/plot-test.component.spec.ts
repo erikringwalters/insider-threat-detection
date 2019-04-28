@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeftComponent } from './left.component';
+import { PlotTestComponent } from './plot-test.component';
 
-describe('LeftComponent', () => {
-  let component: LeftComponent;
-  let fixture: ComponentFixture<LeftComponent>;
+describe('PlotTestComponent', () => {
+  let component: PlotTestComponent;
+  let fixture: ComponentFixture<PlotTestComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LeftComponent ]
+      declarations: [ PlotTestComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LeftComponent);
+    fixture = TestBed.createComponent(PlotTestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
