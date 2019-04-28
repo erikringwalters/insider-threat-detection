@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
 import { CommonModule } from '@angular/common';
 import * as PlotlyJS from 'plotly.js/dist/plotly.js';
 import { PlotlyModule } from 'angular-plotly.js';
@@ -16,6 +18,7 @@ import { PlotlyWrapperComponent } from './plotly-wrapper/plotly-wrapper.componen
 PlotlyModule.plotlyjs = PlotlyJS;
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    InViewportModule,
+    ScrollSpyModule.forRoot(),
     CommonModule,
     PlotlyModule
   ],

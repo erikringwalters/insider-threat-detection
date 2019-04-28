@@ -33,6 +33,7 @@
 // import 'core-js/es6/map';
 // import 'core-js/es6/weak-map';
 // import 'core-js/es6/set';
+import 'intersection-observer';
 
 /**
  * If the application will be indexed by Google Search, the following is required.

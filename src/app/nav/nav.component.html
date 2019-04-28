@@ -4,11 +4,15 @@
   <a routerLink='/right'>Go Right</a>
 </div> -->
 
-<nav id="baseNav" class="navbar navbar-light bg-light fixed-left">
+<nav snScrollSpy id="baseNav" class="navbar navbar-light bg-light fixed-left">
   <a class="navbar-brand" href="#">Home</a>
   <nav class="nav nav-pills flex-column">
-    <a class="nav-link" href="#1">Item 1</a>
-    <a class="nav-link" href="#2">Item 2</a>
-    <a class="nav-link" href="#3">Item 3</a>
+    <a snScrollSpyItem for="baseNav" class="nav-link" href="#1">Item 1</a>
+    <nav class="nav nav-pills flex-column">
+      <a snScrollSpyItem for="baseNav" class="nav-link ml-3 my-1" href="#1-1">Item 1 - 1</a>
+      <a snScrollSpyItem for="baseNav" class="nav-link ml-3 my-1" href="#1-2">Item 1 - 2</a>
+    </nav>
+    <a snScrollSpyItem for="baseNav" class="nav-link" href="#2">Item 2</a>
+    <a snScrollSpyItem for="baseNav" class="nav-link" href="#3">Item 3</a>
   </nav>
 </nav>
