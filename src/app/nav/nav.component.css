@@ -1,3 +1,18 @@
 #baseNav {
   position: fixed;
+  left: 0px;
+  background-color: #253B59;
+  height: 100%;
+}
+
+.navbar-brand {
+  color: #D0D5D9;
+}
+
+.nav-link {
+  color: #D0D5D9;
+}
+
+.nav-link.active {
+  background-color: #586F8C;
 }
