@@ -13,7 +13,8 @@
 }
 
 .card {
-  background-color: #253B59;
-  color: #D0D5D9;
+  /* background-color: #253B59; */
+  background-color: white;
+  color: black; /* #D0D5D9 */
   /* border: none; */
 }

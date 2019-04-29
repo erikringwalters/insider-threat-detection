@@ -2,5 +2,6 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
-  background-color: #D9D6AD;
+  background-color: lightblue;
+  /* #D9D6AD */
 }
