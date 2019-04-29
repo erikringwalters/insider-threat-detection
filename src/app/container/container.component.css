@@ -6,8 +6,14 @@
   visibility: hidden;
 }
 
-.card-title{
+.card-title {
   text-align: center;
   font-size: 24pt;
   margin: 20px;
+}
+
+.card {
+  background-color: #253B59;
+  color: #D0D5D9;
+  /* border: none; */
 }
