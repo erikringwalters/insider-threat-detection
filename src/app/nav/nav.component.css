@@ -16,6 +16,7 @@
 
 .nav-link.active {
   color: black;
-  background-color: #D0D5D9;
+  background-color: lightblue;
+  /* #D0D5D9; */
   /* #586F8C; old color*/
 }
