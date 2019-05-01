@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PlotTestComponent } from './plot-test/plot-test.component';
 import { PlotlyWrapperComponent } from './plotly-wrapper/plotly-wrapper.component';
 import { RecSentScatterplotComponent } from './rec-sent-scatterplot/rec-sent-scatterplot.component';
+import { UserLogScatterplotComponent } from './user-log-scatterplot/user-log-scatterplot.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -28,7 +29,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     ContainerComponent,
     PlotTestComponent,
     PlotlyWrapperComponent,
-    RecSentScatterplotComponent
+    RecSentScatterplotComponent,
+    UserLogScatterplotComponent
   ],
   imports: [
     BrowserModule,
