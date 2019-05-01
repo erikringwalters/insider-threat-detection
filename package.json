@@ -28,6 +28,7 @@
     "core-js": "^2.5.4",
     "express": "^4.16.4",
     "intersection-observer": "^0.5.1",
+    "ng-bootstrap": "^1.6.3",
     "path": "^0.12.7",
     "plotly.js": "^1.47.3",
     "rxjs": "~6.3.3",
