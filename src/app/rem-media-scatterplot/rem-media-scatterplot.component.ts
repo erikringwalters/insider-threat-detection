@@ -1,6 +1,3 @@
-// NOTE: This component is for reference only. Do not use on website.
-// rem-media-scatterplot is for actual use.
-
 import { Component, OnInit } from '@angular/core';
 
 import user_true from '../../data/stripped_media/user_true.json';
@@ -11,11 +8,11 @@ import from_media_true from '../../data/stripped_media/from_rem_true.json';
 import from_media_false from '../../data/stripped_media/from_rem_false.json';
 
 @Component({
-  selector: 'app-plot-test',
+  selector: 'app-rem-media-scatterplot',
   template: '<plotly-plot [data]="graph.data" [layout]="graph.layout"></plotly-plot>',
-  styleUrls: ['./plot-test.component.css']
+  styleUrls: ['./rem-media-scatterplot.component.css']
 })
-export class PlotTestComponent implements OnInit {
+export class RemMediaScatterplotComponent implements OnInit {
 
   userTrue: String[] = user_true;
   userFalse: String[] = user_false;
