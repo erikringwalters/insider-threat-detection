@@ -13,10 +13,15 @@
   </app-container>
   <app-container title="Preprocessing" for="baseNav" id="4">
     All the preprocessing we did
-    <app-plot-test class="plot"></app-plot-test>
+
   </app-container>
-  <app-container title="Normalization???" for="baseNav" id="5">
-    Is that normalization?
+  <app-container title="Anomaly Detection" for="baseNav" id="5">
+    Some graphs:
+    <app-plot-test class="plot"></app-plot-test>
+    We could explain how the anomaly(s) found in the plot above was interesting
+    and may be useful for catching threats. Also how the one below doesn't seem as
+    useful but at least we tried ¯\_(ツ)_/¯
+    <app-rec-sent-scatterplot class="plot"></app-rec-sent-scatterplot>
   </app-container>
   <app-container title="Model" for="baseNav" id="6">
     We used TensorFlow to make our machine learning model. It involved...
