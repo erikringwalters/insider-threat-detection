@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlotlyWrapperComponent } from './plotly-wrapper.component';
+import { UserLogScatterplotComponent } from './user-log-scatterplot.component';
 
-describe('PlotlyWrapperComponent', () => {
-  let component: PlotlyWrapperComponent;
-  let fixture: ComponentFixture<PlotlyWrapperComponent>;
+describe('UserLogScatterplotComponent', () => {
+  let component: UserLogScatterplotComponent;
+  let fixture: ComponentFixture<UserLogScatterplotComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PlotlyWrapperComponent ]
+      declarations: [ UserLogScatterplotComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PlotlyWrapperComponent);
+    fixture = TestBed.createComponent(UserLogScatterplotComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

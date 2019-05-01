@@ -13,8 +13,9 @@ import { NavComponent } from './nav/nav.component';
 import { ContainerComponent } from './container/container.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PlotTestComponent } from './plot-test/plot-test.component';
-import { PlotlyWrapperComponent } from './plotly-wrapper/plotly-wrapper.component';
 import { RecSentScatterplotComponent } from './rec-sent-scatterplot/rec-sent-scatterplot.component';
+import { UserLogScatterplotComponent } from './user-log-scatterplot/user-log-scatterplot.component';
+import { RemMediaScatterplotComponent } from './rem-media-scatterplot/rem-media-scatterplot.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -27,8 +28,9 @@ PlotlyModule.plotlyjs = PlotlyJS;
     NavComponent,
     ContainerComponent,
     PlotTestComponent,
-    PlotlyWrapperComponent,
-    RecSentScatterplotComponent
+    RecSentScatterplotComponent,
+    UserLogScatterplotComponent,
+    RemMediaScatterplotComponent
   ],
   imports: [
     BrowserModule,

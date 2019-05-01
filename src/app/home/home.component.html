@@ -4,16 +4,21 @@
       <img id="logo" src="favicon.ico" width="75px" height="75px"/>
   </div>
   <app-container title="Abstract" for="baseNav" id="1">
-    <p>This capstone researched how artificial intellicence (AI) and machine learning (ML) could best be applied to the problem of detecting insider threats with a general use system. Larger and more affluent corporations have been able to implement specialized ML models, but such technology is out of reach to small and mid-sized corporations, leaving them vulnerable.</p>
+    <p>In this capstone project, our team researched
+      how artificial intellicence (AI) and machine learning (ML)
+      could best be applied to the problem of detecting insider threats with
+      a general use system. Larger and more affluent corporations have been able
+      to implement specialized ML models, but such technology is out of reach to
+      small and mid-sized corporations, leaving them vulnerable.</p>
     <p></p>
   </app-container>
   <app-container title="Purpose" for="baseNav" id="2">
     Our purpose
   </app-container>
   <app-container title="Data Collection" for="baseNav" id="3">
-    Data was collected from Carnegie Melon's datasets on employees.
+   <p> Data was collected from Carnegie Melon's datasets on employees.
     The data included log on/log off times, number of emails sent and received,
-    and whether they were labeled as an insider threat.
+    and whether they were labeled as an insider threat.</p>
   </app-container>
 
   <app-container title="Preprocessing" for="baseNav" id="4">
@@ -21,11 +26,14 @@
   </app-container>
   <app-container title="Visualization" for="baseNav" id="5">
     Some graphs:
-    <app-plot-test class="plot"></app-plot-test>
-    We could explain how the anomaly(s) found in the plot above was interesting
+    <app-rem-media-scatterplot class="plot"></app-rem-media-scatterplot>
+
+    <p>We could explain how the anomaly(s) found in the plot above was interesting
     and may be useful for catching threats. Also how the one below doesn't seem as
-    useful but at least we tried ¯\_(ツ)_/¯
+    useful but at least we tried ¯\_(ツ)_/¯</p>
     <app-rec-sent-scatterplot class="plot"></app-rec-sent-scatterplot>
+    More explanations...
+    <app-user-log-scatterplot class="plot"></app-user-log-scatterplot>
   </app-container>
   <app-container title="Model" for="baseNav" id="6">
     We used TensorFlow to make our machine learning model. It involved...
