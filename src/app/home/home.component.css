@@ -1,6 +1,3 @@
-.scrollableArea{
-  text-align: center;
-}
 #logo{
   position: relative;
   top: -15px;
@@ -9,9 +6,12 @@ h1{
   padding-right: 20px;
   color: black;
 }
+p{
+  text-align: left;
+  text-indent: 5%;
+}
 #titleRow{
   margin: 50px;
-  text-align: center;
 }
 .plot {
   text-align: center;
