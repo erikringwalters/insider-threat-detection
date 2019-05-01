@@ -1,7 +1,8 @@
 #baseNav {
   position: fixed;
   left: 0px;
-  background-color: #253B59;
+  background-color: #2F4550;
+  /* #253B59; old color*/
   height: 100%;
 }
 
@@ -14,5 +15,8 @@
 }
 
 .nav-link.active {
-  background-color: #586F8C;
+  color: black;
+  background-color: lightblue;
+  /* #D0D5D9; */
+  /* #586F8C; old color*/
 }
