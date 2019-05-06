@@ -40,7 +40,7 @@ export class RemovableMediaKnnPlotComponent implements OnInit {
             color: 'lightblue',
             size: 10,
             line: {
-              width: 2,
+              width: 1,
               color: 'darkgray'
             }
           },
@@ -56,7 +56,7 @@ export class RemovableMediaKnnPlotComponent implements OnInit {
             color: 'red',
             size: 10,
             line: {
-              width: 2,
+              width: 1,
               color: 'black'
             }
           },
