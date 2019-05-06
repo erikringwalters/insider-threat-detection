@@ -68,7 +68,7 @@ export class PluginKnnPlotComponent implements OnInit {
         height: 500,
 
         // --titles and labels
-        title: 'knn',
+        title: 'device plugin knn',
         xaxis: { title: 'index' },
         yaxis: { title: 'knn' },
 

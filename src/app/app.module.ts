@@ -18,6 +18,7 @@ import { UserLogScatterplotComponent } from './user-log-scatterplot/user-log-sca
 import { RemMediaScatterplotComponent } from './rem-media-scatterplot/rem-media-scatterplot.component';
 import { RemovableMediaKnnPlotComponent } from './removable-media-knn-plot/removable-media-knn-plot.component';
 import { PluginKnnPlotComponent } from './plugin-knn-plot/plugin-knn-plot.component';
+import { LogonKnnPlotComponent } from './logon-knn-plot/logon-knn-plot.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -34,7 +35,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     UserLogScatterplotComponent,
     RemMediaScatterplotComponent,
     RemovableMediaKnnPlotComponent,
-    PluginKnnPlotComponent
+    PluginKnnPlotComponent,
+    LogonKnnPlotComponent
   ],
   imports: [
     BrowserModule,
