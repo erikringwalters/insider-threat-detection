@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import rem_false from '../../data/knn/removable_media_false_knn.json';
-import rem_true from '../../data/knn/removable_media_true_knn.json';
+import plugin_false from '../../data/knn/device_plugin_count_false_knn.json';
+import plugin_true from '../../data/knn/device_plugin_count_true_knn.json';
 import user_false from '../../data/knn/user_false_knn.json';
 import user_true from '../../data/knn/user_true_knn.json';
 import index_false from '../../data/knn/index_false_knn.json'
 import index_true from '../../data/knn/index_true_knn.json'
 
 @Component({
-  selector: 'app-removable-media-knn-plot',
+  selector: 'app-plugin-knn-plot',
   template: '<plotly-plot [data]="graph.data" [layout]="graph.layout"></plotly-plot>',
-  styleUrls: ['./removable-media-knn-plot.component.css']
+  styleUrls: ['./plugin-knn-plot.component.css']
 })
-export class RemovableMediaKnnPlotComponent implements OnInit {
+export class PluginKnnPlotComponent implements OnInit {
 
-  remFalse: number[] = rem_false;
-  remTrue: number[] = rem_true;
+  pluginFalse: number[] = plugin_false;
+  pluginTrue: number[] = plugin_true;
   userFalse: String[] = user_false;
   userTrue: String[] = user_true;
   indexFalse: number[] = index_false;
@@ -32,7 +32,7 @@ export class RemovableMediaKnnPlotComponent implements OnInit {
         {
           name: 'Not a threat',
           x: this.indexFalse,
-          y: this.remFalse,
+          y: this.pluginFalse,
           text: this.userFalse,
           type: 'scatter',
           mode: 'markers',
@@ -48,7 +48,7 @@ export class RemovableMediaKnnPlotComponent implements OnInit {
         {
           name: 'Insider threat',
           x: this.indexTrue,
-          y: this.remTrue,
+          y: this.pluginTrue,
           text: this.userTrue,
           type: 'scatter',
           mode: 'markers',
