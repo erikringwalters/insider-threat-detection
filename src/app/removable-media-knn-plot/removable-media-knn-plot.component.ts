@@ -68,9 +68,9 @@ export class RemovableMediaKnnPlotComponent implements OnInit {
         height: 500,
 
         // --titles and labels
-        title: 'removable media knn',
-        xaxis: { title: 'index' },
-        yaxis: { title: 'knn' },
+        title: 'Distance of Files Copied to and from Removable Media Devices',
+        xaxis: { title: 'Index' },
+        yaxis: { title: 'To Removable Media KNN' },
 
         // --misc params
         hovermode: 'closest',

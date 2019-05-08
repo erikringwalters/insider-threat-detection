@@ -68,9 +68,9 @@ export class LogonKnnPlotComponent implements OnInit {
         height: 500,
 
         // --titles and labels
-        title: 'user logon knn',
-        xaxis: { title: 'index' },
-        yaxis: { title: 'knn' },
+        title: 'Distance of Logon and Logoff Times',
+        xaxis: { title: 'Index' },
+        yaxis: { title: 'User Logon KNN' },
 
         // --misc params
         hovermode: 'closest',
