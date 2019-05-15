@@ -67,9 +67,9 @@ export class RecSentScatterplotComponent implements OnInit {
       height: 500,
 
       // --titles and labels
-      title: 'Standard Deviations of sent and received (?)',
-      xaxis: { title: 'deviations from received (?)' },
-      yaxis: { title: 'deviations to sent (?)' },
+      title: 'Standard Deviations of sent and received emails to and from external sources',
+      xaxis: { title: 'deviations of received emails' },
+      yaxis: { title: 'deviations of sent emails' },
 
       // --misc params
       hovermode: 'closest',

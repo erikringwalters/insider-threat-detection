@@ -2,6 +2,9 @@
   position: relative;
   top: -15px;
 }
+#fileSize{
+  border-radius: 2%;
+}
 h1{
   padding-right: 20px;
   color: black;
