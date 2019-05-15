@@ -19,6 +19,8 @@ import { RemMediaScatterplotComponent } from './rem-media-scatterplot/rem-media-
 import { RemovableMediaKnnPlotComponent } from './removable-media-knn-plot/removable-media-knn-plot.component';
 import { PluginKnnPlotComponent } from './plugin-knn-plot/plugin-knn-plot.component';
 import { LogonKnnPlotComponent } from './logon-knn-plot/logon-knn-plot.component';
+import { PpTimeBarChartComponent } from './pp-time-bar-chart/pp-time-bar-chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -36,7 +38,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     RemMediaScatterplotComponent,
     RemovableMediaKnnPlotComponent,
     PluginKnnPlotComponent,
-    LogonKnnPlotComponent
+    LogonKnnPlotComponent,
+    PpTimeBarChartComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     InViewportModule,
     ScrollSpyModule.forRoot(),
     CommonModule,
-    PlotlyModule
+    PlotlyModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

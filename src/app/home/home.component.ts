@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { PpTimeBarChartComponent } from '../pp-time-bar-chart/pp-time-bar-chart.component';
 
 @Component({
   selector: 'app-home',
